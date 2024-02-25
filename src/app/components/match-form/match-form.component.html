@@ -1,0 +1,32 @@
+<app-banner [a]="title"></app-banner>
+
+  
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <form #matcheform="ngForm" (ngSubmit)="Ajoutmatche()">
+            <div class="form-group">
+              <input type="text" [(ngModel)]="matche.teamOne" name="teamOne" class="form-control" placeholder="Team One ">
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="matche.teamTwo" name="teamTwo" class="form-control" placeholder="Team two">
+            </div>
+            <div class="form-group">
+                <input type="number" [(ngModel)]="matche.scoreOne" name="scoreOne" class="form-control" placeholder="Score One">
+              </div>
+              <div class="form-group">
+                <input type="number" [(ngModel)]="matche.scoreTwo" name="scoreTwo" class="form-control" placeholder="Score Two">
+              </div>
+             
+            
+        
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary py-3 px-5" value="Add/Edit">
+            </div>
+          </form>  
+        </div>
+       
+      </div>
+    </div>
+  </div>
